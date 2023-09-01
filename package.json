@@ -5,7 +5,8 @@
   "main": "api/server.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon api/server.js"
+    "start": "nodemon api/server.js",
+    "start:dev": "nodemon api/server.js"
   },
   "keywords": [],
   "author": "Herlander Tavares",
