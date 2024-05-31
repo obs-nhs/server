@@ -196,7 +196,6 @@ export async function allocateStaff(shift) {
       const array = [...availableStaff(shift, hour).available];
       excludeBreaks(array);
       excludeNurses(array);
-      excludeOverworked(array);
       sortStaff(array);
       return array;
     }
@@ -222,7 +221,8 @@ export async function allocateStaff(shift) {
 
       if (index > staff?.length - 1) index = 0;
       if (staff?.length < 1) staff.push(...populateStaff());
-      const staffMember = staff?.splice(index, 1)?.[0];
+      let staffMember = staff?.splice(index, 1)?.[0];
+      if (!staffMember?.id) staffMember = populateStaff()?.[0];
       usedStaff?.push(staffMember?.id?.toString());
       return {_id: staffMember?.id, name: staffMember?.name};
     }
