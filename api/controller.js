@@ -20,7 +20,7 @@ export const getHospitals = async (req, res) => {
 export const refresh = async (req, res) => {
   try {
     await refreshShifts();
-    res.status(200).json('Successfully refreshed shifts');
+    res.status(200).json({response: 'Successfully refreshed shifts'});
   } catch (error) {
     throw error;
   }
@@ -29,7 +29,7 @@ export const refresh = async (req, res) => {
 export const populate = async (req, res) => {
   try {
     await populateShifts();
-    res.status(200).json('Successfully populated shifts');
+    res.status(200).json({response: 'Successfully populated shifts'});
   } catch (error) {
     throw error;
   }
