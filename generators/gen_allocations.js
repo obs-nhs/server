@@ -221,6 +221,7 @@ export async function allocateStaff(shift) {
       }
 
       if (index > staff?.length - 1) index = 0;
+      if (staff?.length < 1) staff.push(...populateStaff());
       const staffMember = staff?.splice(index, 1)?.[0];
       usedStaff?.push(staffMember?.id?.toString());
       return {_id: staffMember?.id, name: staffMember?.name};
