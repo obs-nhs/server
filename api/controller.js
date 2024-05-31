@@ -15,7 +15,3 @@ export const getHospitals = async (req, res) => {
     throw error;
   }
 };
-
-export const transferPatient = (req, res) => {};
-
-export const dischargePatient = (req, res) => {};

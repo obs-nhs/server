@@ -1,0 +1,197 @@
+[
+  {
+    "location": "corridor",
+    "code": "c",
+    "engagement": [
+      "engaging with staff/peers",
+      "using phone/device",
+      "in restrictive holds",
+      "pacing around",
+      "listening to music",
+      "waiting for/getting medication",
+      "awaiting request",
+      "not engaged"
+    ]
+  },
+
+  {
+    "location": "bedroom awake",
+    "code": "ba",
+    "engagement": [
+      "using phone/device",
+      "eating food",
+      "laying in bed",
+      "using the bathroom",
+      "reading a book",
+      "responding to external stimuli",
+      "in restrictive holds",
+      "engaging in conversation at the door",
+      "not engaged"
+    ]
+  },
+
+  {"location": "bedroom asleep", "code": "bs", "engagement": []},
+
+  {"location": "absconded", "code": "abs", "engagement": []},
+
+  {"location": "seclusion", "code": "sec", "engagement": []},
+
+  {
+    "location": "dinning room",
+    "code": "dr",
+    "engagement": [
+      "eating food",
+      "playing games",
+      "engaging with staff/peers",
+      "using phone/device",
+      "in restrictive holds",
+      "listening to music",
+      "not engaged"
+    ]
+  },
+
+  {
+    "location": "common room",
+    "code": "cr",
+    "engagement": [
+      "watching TV",
+      "engaging with staff/peers",
+      "using phone/device",
+      "in restrictive holds",
+      "listening to music",
+      "not engaged"
+    ]
+  },
+
+  {
+    "location": "quiet room",
+    "code": "qr",
+    "engagement": [
+      "watching TV",
+      "engaging with staff/peers",
+      "using phone/device",
+      "in restrictive holds",
+      "listening to music",
+      "reading a book",
+      "not engaged"
+    ]
+  },
+
+  {
+    "location": "interview room",
+    "code": "ir",
+    "engagement": [
+      "watching TV",
+      "attending meeting",
+      "engaging with staff/peers",
+      "using phone/device",
+      "in restrictive holds",
+      "listening to music",
+      "reading a book",
+      "not engaged"
+    ]
+  },
+
+  {
+    "location": "multipurpose room",
+    "code": "mpr",
+    "engagement": [
+      "engaging with staff/peers",
+      "using phone/device",
+      "in restrictive holds",
+      "listening to music",
+      "reading a book",
+      "not engaged"
+    ]
+  },
+
+  {
+    "location": "sensory room",
+    "code": "sr",
+    "engagement": [
+      "engaging with staff/peers",
+      "using phone/device",
+      "in restrictive holds",
+      "listening to music",
+      "reading a book",
+      "not engaged"
+    ]
+  },
+
+  {
+    "location": "patio",
+    "code": "p",
+    "engagement": [
+      "playing games",
+      "engaging with staff/peers",
+      "using phone/device",
+      "in restrictive holds",
+      "listening to music",
+      "reading a book",
+      "smoking a cigarette/vape",
+      "not engaged"
+    ]
+  },
+
+  {
+    "location": "garden",
+    "code": "g",
+    "engagement": [
+      "playing games",
+      "engaging with staff/peers",
+      "using phone/device",
+      "in restrictive holds",
+      "listening to music",
+      "reading a book",
+      "smoking a cigarette/vape",
+      "not engaged"
+    ]
+  },
+  {"location": "out of the ward", "code": "o", "engagement": []},
+
+  {
+    "location": "tv lounge",
+    "code": "tvl",
+    "engagement": [
+      "watching TV",
+      "engaging with staff/peers",
+      "using phone/device",
+      "in restrictive holds",
+      "listening to music",
+      "not engaged"
+    ]
+  },
+
+  {
+    "location": "wardround room",
+    "code": "wr",
+    "engagement": [
+      "watching TV",
+      "attending meeting",
+      "engaging with staff/peers",
+      "using phone/device",
+      "in restrictive holds",
+      "listening to music",
+      "reading a book",
+      "not engaged"
+    ]
+  },
+
+  {
+    "location": "activities room",
+    "code": "ar",
+    "engagement": [
+      "doing ward activities/games",
+      "watching TV",
+      "attending meeting",
+      "engaging with staff/peers",
+      "using phone/device",
+      "in restrictive holds",
+      "listening to music",
+      "reading a book",
+      "not engaged"
+    ]
+  },
+
+  {"location": "on leave", "code": "o/l", "engagement": []}
+]

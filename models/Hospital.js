@@ -1,8 +1,9 @@
 import mongoose from 'mongoose';
-const Schema = mongoose.Schema;
+const {Schema} = mongoose;
+const {ObjectId} = Schema.Types;
 
 const wardSchema = new Schema(
-  {name: {type: String}, id: {type: Schema.Types.ObjectId, ref: 'Ward'}},
+  {name: {type: String}, id: {type: ObjectId, ref: 'Ward'}},
   {_id: false}
 );
 

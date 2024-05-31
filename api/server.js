@@ -4,9 +4,11 @@ import parser from 'body-parser';
 import helmet from 'helmet';
 import compression from 'compression';
 import mongoose from 'mongoose';
+import {scheduleJob} from 'node-schedule';
 
 import router from './router.js';
-import {dbLink, errorPrompt} from '../utils/helpers.js';
+import {dbLink} from '../utils/helpers.js';
+import {populateShifts, refreshShifts} from '../generators/gen_shifts.js';
 
 const app = express();
 
@@ -18,7 +20,10 @@ app.use(router);
 
 mongoose
   .connect(dbLink)
-  .then(() => app.listen(process.env.port || 3000))
+  .then(() => app.listen(process.env.port || 8800))
   .catch(error => {
     throw error;
   });
+
+scheduleJob('* * 0 * * *', refreshShifts);
+scheduleJob('* 0 * * * *', populateShifts);
