@@ -1,3 +1,4 @@
+import {refreshShifts} from '../generators/gen_shifts.js';
 import Hospital from '../models/Hospital.js';
 import {capitalize} from '../utils/helpers.js';
 
@@ -11,6 +12,24 @@ export const getHospitals = async (req, res) => {
     });
 
     res.status(200).json(hospName);
+  } catch (error) {
+    throw error;
+  }
+};
+
+export const refresh = async (req, res) => {
+  try {
+    await refreshShifts();
+    res.status(200).json('Successfully refreshed shifts');
+  } catch (error) {
+    throw error;
+  }
+};
+
+export const populate = async (req, res) => {
+  try {
+    await populateShifts();
+    res.status(200).json('Successfully populated shifts');
   } catch (error) {
     throw error;
   }

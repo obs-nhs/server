@@ -1,12 +1,11 @@
 import express from 'express';
-import {getHospitals} from './controller.js';
-import {populateShifts, refreshShifts} from '../generators/gen_shifts.js';
+import {getHospitals, refresh, populate} from './controller.js';
 const router = express.Router();
 
 router.get('/', getHospitals);
 
-router.get('/refreshShifts', refreshShifts);
+router.get('/refreshShifts', refresh);
 
-router.get('/populateShifts', populateShifts);
+router.get('/populateShifts', populate);
 
 export default router;
