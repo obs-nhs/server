@@ -209,7 +209,7 @@ export async function allocateStaff(shift) {
       const previous = [prevStaff].flat(2);
       previous?.forEach(prev => {
         if (prev?._id?.toString() === staff?.[index]?.id?.toString()) {
-          if (staff?.length < 2) staff.push(populateStaff(time));
+          if (staff?.length < 2) staff.push(populateStaff());
           ++index;
         }
       });

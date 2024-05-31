@@ -47,7 +47,8 @@ export async function createShift() {
 
   for (let i = 0; i < wards.length; i++) {
     const ward = wards[i];
-    const targetDate = convertDate(moment().add(7, 'd').toDate());
+    const today = new Date(new Date().setHours(1, 0, 0, 0));
+    const targetDate = convertDate(moment(today).add(7, 'd').toDate());
     const shift = (await Shift.find({date: targetDate, ward: ward?._id}))?.[0];
 
     if (!shift) {
